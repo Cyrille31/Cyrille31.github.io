@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CGExcel</title>
+<meta name="description" content="CGExcel — outils Excel/VBA et applications web conçus par Cyrille Gindre, à Toulouse.">
+<style>
+  :root{
+    --bleu:#1f4e79;
+    --bleu-clair:#3a7ca5;
+    --encre:#1b1b1b;
+    --gris:#5a5a5a;
+    --trait:#e2e2e2;
+    --fond:#ffffff;
+    --fond-doux:#f6f8fa;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    background:var(--fond);
+    color:var(--encre);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:720px;margin:0 auto;padding:0 20px}
+  header{
+    border-bottom:1px solid var(--trait);
+    padding:56px 0 36px;
+    margin-bottom:40px;
+  }
+  .marque{display:flex;align-items:center;gap:16px}
+  .marque svg{flex:0 0 auto}
+  h1{
+    font-size:2.1rem;
+    margin:0;
+    letter-spacing:-.02em;
+    color:var(--bleu);
+  }
+  .accroche{
+    margin:14px 0 0;
+    color:var(--gris);
+    font-size:1.05rem;
+  }
+  h2{
+    font-size:1.15rem;
+    margin:40px 0 14px;
+    color:var(--bleu);
+    letter-spacing:-.01em;
+  }
+  p{margin:0 0 16px}
+  .projets{list-style:none;padding:0;margin:0}
+  .projets li{
+    border:1px solid var(--trait);
+    border-radius:10px;
+    padding:18px 20px;
+    margin-bottom:14px;
+    background:var(--fond-doux);
+  }
+  .projets a{
+    color:var(--bleu);
+    text-decoration:none;
+    font-weight:600;
+    font-size:1.05rem;
+  }
+  .projets a:hover{text-decoration:underline}
+  .projets span{
+    display:block;
+    color:var(--gris);
+    font-size:.95rem;
+    margin-top:4px;
+  }
+  .bal{
+    border-left:3px solid var(--bleu-clair);
+    padding:4px 0 4px 18px;
+    margin:18px 0;
+    color:var(--gris);
+    font-style:italic;
+  }
+  a.lien{color:var(--bleu)}
+  footer{
+    border-top:1px solid var(--trait);
+    margin-top:52px;
+    padding:28px 0 56px;
+    color:var(--gris);
+    font-size:.9rem;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --encre:#e8e8e8;
+      --gris:#a8a8a8;
+      --trait:#323232;
+      --fond:#121212;
+      --fond-doux:#1c1c1c;
+      --bleu:#7ab3e0;
+      --bleu-clair:#4d8fc0;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="marque">
+      <svg width="52" height="52" viewBox="0 0 52 52" aria-hidden="true">
+        <g stroke="#3a7ca5" stroke-width="1.6">
+          <line x1="14" y1="16" x2="38" y2="14"/>
+          <line x1="14" y1="16" x2="22" y2="36"/>
+          <line x1="38" y1="14" x2="22" y2="36"/>
+          <line x1="38" y1="14" x2="40" y2="36"/>
+          <line x1="22" y1="36" x2="40" y2="36"/>
+          <line x1="14" y1="16" x2="40" y2="36"/>
+        </g>
+        <g fill="#1f4e79">
+          <circle cx="14" cy="16" r="5"/>
+          <circle cx="38" cy="14" r="5"/>
+          <circle cx="22" cy="36" r="5"/>
+          <circle cx="40" cy="36" r="5"/>
+        </g>
+      </svg>
+      <h1>CGExcel</h1>
+    </div>
+    <p class="accroche">Outils Excel/VBA et applications web, conçus à Toulouse par Cyrille Gindre.</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <h2>Ce que fait CGExcel</h2>
+  <p>CGExcel conçoit des outils de travail simples et durables : compléments et macros Excel/VBA pour un usage professionnel, et applications web légères, utilisables directement dans un navigateur, sans installation ni compte à créer.</p>
+  <p>Le principe est toujours le même : un outil doit faire une chose, bien, et rester lisible par celui qui l'utilise.</p>
+
+  <h2>Projets</h2>
+  <ul class="projets">
+    <li>
+      <a href="https://cyrille31.github.io/cercle-parole/">Cercle de parole</a>
+      <span>Double chronomètre pour animer les groupes de parole de 4 à 10 personnes.</span>
+    </li>
+    <li>
+      <a href="https://cyrille31.github.io/eclipse/">Sur la trace des éclipses</a>
+      <span>Atlas interactif des bandes de totalité des éclipses solaires.</span>
+    </li>
+  </ul>
+
+  <h2>Licence</h2>
+  <p>Les logiciels CGExcel sont publiés sous licence MIT, accompagnée de la <strong>BAL 1.0 — Bonne Action License</strong>.</p>
+  <p class="bal">En échange, une seule chose vous est demandée, sur l'honneur : faire une bonne action chaque jour. Aider un voisin, sourire à un inconnu, ramasser un papier… c'est vous qui voyez.</p>
+
+  <h2>Contact</h2>
+  <p>
+    <a class="lien" href="mailto:cgexcel.31@gmail.com">cgexcel.31@gmail.com</a><br>
+    <a class="lien" href="https://github.com/Cyrille31">github.com/Cyrille31</a><br>
+    <a class="lien" href="https://cgexcel.wordpress.com/">cgexcel.wordpress.com</a>
+  </p>
+
+</main>
+
+<footer class="wrap">
+  © 2026 CGExcel — Cyrille Gindre, Toulouse, France
+</footer>
+
+</body>
+</html>
